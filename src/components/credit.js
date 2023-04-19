@@ -10,8 +10,8 @@ const Credit = () => (
 
    
 
-<Container className='my-5'>
-        <Row >
+<Container>
+        <Row className='my-5'>
             <Col xs={12} lg={7} className='mb-5 mb-lg-0 px-5 px-lg-0'>
 
                 <Row>
@@ -23,7 +23,7 @@ const Credit = () => (
                     <Col className="my-2"  sm={true}>
                    
                     <FontAwesomeIcon className="mx-2" icon={faCreditCard} style={{color: "#f05656",}} />
-                   Crédito Pessoal
+                    Crédito Pessoal
                     </Col >
 
                     <Col className="my-2" sm={true}>
