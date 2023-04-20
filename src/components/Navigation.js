@@ -27,10 +27,10 @@ const Navigation = () => {
           <ButtonGroup>
             <Button variant="outline-light">
               <NavDropdown title="Acessar a minha conta" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action4">
+                <NavDropdown.Item className='dropDownColor' href="#action4">
                  Pessoa Física
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action5">
+                <NavDropdown.Item className='dropDownColor' href="#action5">
                   Pessoa Jurídica
                 </NavDropdown.Item>
               </NavDropdown>

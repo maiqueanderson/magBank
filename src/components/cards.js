@@ -15,7 +15,7 @@ const Cards = ({ posts }) => {
         posts?.map((post) => {
           return (
             <Col xs={12} lg={4} key={post.id}>
-              <Card className="mx-auto my-3" style={{ width: "18rem" }}>
+              <Card className="mx-auto my-3" >
                 <Card.Img variant="top" src={post.image} />
                 <Card.Body>
                   <Card.Title>{post.title}</Card.Title>
