@@ -1,0 +1,38 @@
+.faq{
+    background-color: #443a50;
+
+    // para mudar o fundo do acordeon e outras cores
+    &-accordion{
+        --bs-accordion-bg: unset;
+        --bs-accordion-active-color: #fff;
+        --bs-accordion-color: #fff;
+        --bs-accordion-active-bg: #3b2e4a;
+        --bs-accordion-btn-color: #fff;
+        --bs-accordion-btn-bg:#3b2e4a;
+        --bs-accordion-border-color:  #3b2e4a;
+        --bs-accordion-btn-active-icon: none;
+        --bs-accordion-btn-icon: none;
+        
+        // para tirar a sombra em volta do butão em estado de focus
+        :focus{
+        box-shadow: none;
+        }
+    }
+
+    &-clickable{
+        cursor: pointer;
+    }
+
+    &-title{
+        font-size: 2.2rem;
+        font-weight: 300;
+        line-height: 1.2;
+        text-align: center;
+
+        // esse codigo abaixo é para fazer algo quando a tela for maior e outra coisa quando ela for menor,
+        //     nesse caso quanto a tela for maior que 992px a font do titulo será maior
+        @media screen and (min-width: 992px) {
+            font-size: 3.5rem;
+        }
+    }
+}
