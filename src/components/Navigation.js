@@ -7,13 +7,16 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 import './Navigation.scss';
 import logo from '../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Navigation = ({ handleCreateAccount }) => {
   return (
     <Navbar expand="lg">
       <Container>
         <Navbar.Brand href="#">
+          <Link to='./'>
           <img src={logo} height={30} className='d-inline-block align-top' alt='Magbank logo' />
+          </Link>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -27,11 +30,11 @@ const Navigation = ({ handleCreateAccount }) => {
           <ButtonGroup>
             <Button variant="outline-light">
               <NavDropdown title="Acessar a minha conta" id="basic-nav-dropdown">
-                <NavDropdown.Item className='dropDownColor' href="#action4">
-                 Pessoa Física
+                <NavDropdown.Item >
+                <Link className='dropDownColor' to='./Login'>Pessoa Física</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item className='dropDownColor' href="#action5">
-                  Pessoa Jurídica
+                <NavDropdown.Item>
+                <Link className='dropDownColor' to='./Login'>Pessoa Jurídica</Link>
                 </NavDropdown.Item>
               </NavDropdown>
             </Button>
