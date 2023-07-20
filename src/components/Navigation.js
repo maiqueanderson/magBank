@@ -31,10 +31,10 @@ const Navigation = ({ handleCreateAccount }) => {
             <Button variant="outline-light">
               <NavDropdown title="Acessar a minha conta" id="basic-nav-dropdown">
                 <NavDropdown.Item >
-                <Link className='dropDownColor' to='./Login'>Pessoa Física</Link>
+                <Link className='dropDownColor' to='./Login'>Pessoas Físicas</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                <Link className='dropDownColor' to='./Login'>Pessoa Jurídica</Link>
+                <Link className='dropDownColor' to='./Login'>Pessoas Jurídicas</Link>
                 </NavDropdown.Item>
               </NavDropdown>
             </Button>
